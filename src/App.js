@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+import logo from './assests/images/TWW_logo.png';
+import React from 'react';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
+
+import Cutting_Board_Cleaning from './components/Cutting_Board_Cleaning.js';
+import Home from './Home.js';
+
 import './App.css';
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Home />
+      <Cutting_Board_Cleaning />
+
+
+      <Link to="/invoices">Invoices</Link> |{" "}
+      <Link to="/Cutting_Board_Cleaning">Expenses</Link>
+
+
     </div>
   );
 }
