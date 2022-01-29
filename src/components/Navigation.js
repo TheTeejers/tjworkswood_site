@@ -1,20 +1,21 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import './Navigation.css';
+import logo from '../assests/images/sawblade_logo.png';
 
 function Navigation() {
   return (
-    <div className="navigation">
+    <div className="navigation1">
       <nav className="navbar navbar-expand navbar-dark bg-dark">
-        <div className="container">
+        <div className="navigation">
           <NavLink className="navbar-brand" to="/">
-            TJWorksWood
+            <img src={logo} className="TWW_logo_menu" alt="logo" />
           </NavLink>
-          <div>
+          <div class="dropdown-content">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
                 <NavLink className="nav-link" to="/">
                   Home
-                  <span className="sr-only">(current)</span>
                 </NavLink>
               </li>
               <li className="nav-item">

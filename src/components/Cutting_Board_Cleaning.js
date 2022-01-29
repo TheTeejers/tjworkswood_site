@@ -4,7 +4,7 @@ import Header from './Header.js';
 class Cutting_Board_Cleaning extends Component {
 
   render() {
-    const questionList = [
+    const careSteps = [
       {description: 'Wooden cutting boards should never be submerged in water for extended periods of time. NEVER place your wooden cutting board in the dishwasher. Wash your cutting board with soap and warm water and scrub well.', key: 0},
       {description: 'Wipe down the board and let it dry thoroughly overnight, either sitting on a wire rack or upright.  Laying it flat will restrict air flow and could lead to warping.', key: 1},
       {description: 'Once dried overnight, use your hands, a small bar towel, or new paint brush to apply a generous layer of mineral oil (do not use vegetable or nut-based oil on your cutting board for the simple reason that it will spoil and become rancid) to the sides, top, bottom, and any groove, grip, or handle. It is extremely important to give your cutting board a good oiling on all surfaces every 3-4 weeks, more often with frequent use.', key: 2},
@@ -14,13 +14,13 @@ class Cutting_Board_Cleaning extends Component {
 
     return (
 
-      <div class='pageContainer'>
+      <div>
         <Header />
         <h1>Cutting Board Cleaning and Maintenance</h1>
         <ol>
-          {questionList.map(question => {
+          {careSteps.map(careItem => {
             return (
-              <li key={question.key}>{question.description}</li>
+              <li key={careItem.key}>{careItem.description}</li>
             );
           })}
         </ol>

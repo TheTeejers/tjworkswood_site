@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
 }
 
 body {
@@ -9,13 +9,17 @@ body {
 }
 
 .TWW_logo_main {
-  height: 60vmin;
+  height: 90vmin;
   pointer-events: none;
+  -webkit-filter: drop-shadow(100px 10px 10px #000000 );
+  filter: drop-shadow(50px 30px 4px #000000);
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .TWW_logo_main {
-    animation: TWW_logo_main-spin infinite 30s linear;
+
+
+    /* animation: TWW_logo_main-spin infinite 30s linear; */
   }
 }
 
