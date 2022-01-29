@@ -16,19 +16,21 @@ class Cutting_Board_Cleaning extends Component {
 
       <div>
         <Header />
-        <h1>Cutting Board Cleaning and Maintenance</h1>
-        <ol>
-          {careSteps.map(careItem => {
-            return (
-              <li key={careItem.key}>{careItem.description}</li>
-            );
-          })}
-        </ol>
-        <h2>Tips</h2>
-        <h3>Disinfect & deodorize using vinegar</h3>
-        <p>We recommend keeping a spray bottle of vinegar handy to disinfect & deodorize your wood cutting board. Acetic acid (white vinegar) is an excellent disinfectant for E. coli, Salmonella and other household bacteria. Spray vinegar on the wood cutting board, let sit for a few minutes and wipe it with a damp warm cloth.</p>
-        <h3>Remove stains & deodorize with baking soda</h3>
-        <p>Combine 2 tablespoons of baking soda, 1 tablespoon of salt and 3 tablespoons of hot water to create a non-toxic cleaning agent. Mix these ingredients together to form a paste, and scrub the entire surface of the cutting board. Finally, wipe it with a warm wet cloth and dry with a dish towel.</p>
+        <div className= 'pageContainer'>
+          <h1>Cutting Board Cleaning and Maintenance</h1>
+          <ol>
+            {careSteps.map(careItem => {
+              return (
+                <li key={careItem.key}>{careItem.description}</li>
+              );
+            })}
+          </ol>
+          <h2>Tips</h2>
+          <h3>Disinfect & deodorize using vinegar</h3>
+          <p>We recommend keeping a spray bottle of vinegar handy to disinfect & deodorize your wood cutting board. Acetic acid (white vinegar) is an excellent disinfectant for E. coli, Salmonella and other household bacteria. Spray vinegar on the wood cutting board, let sit for a few minutes and wipe it with a damp warm cloth.</p>
+          <h3>Remove stains & deodorize with baking soda</h3>
+          <p>Combine 2 tablespoons of baking soda, 1 tablespoon of salt and 3 tablespoons of hot water to create a non-toxic cleaning agent. Mix these ingredients together to form a paste, and scrub the entire surface of the cutting board. Finally, wipe it with a warm wet cloth and dry with a dish towel.</p>
+        </div>
       </div>
     );
   }

@@ -1,6 +1,14 @@
 .navigation {
+  /* position: -webkit-sticky; */
   position: fixed;
-  display: inline-block;
+  top: 50px;
+  /* padding: 5px; */
+  /* background-color: #cae8ca;
+  border: 2px solid #4CAF50; */
+  /* display: inline-block; */
+  z-index: 100
+  /* background-color: blue; */
+
 }
 
 .dropdown-content {
@@ -8,22 +16,46 @@
   position: absolute;
   background-color: #9FCF67;
   min-width: 160px;
-  box-shadow: 100px 80px 16px 20px rgba(0,0,0,0.8);
-  /* padding: 12px 16px; */
-  z-index: 1;
+  -webkit-filter: drop-shadow(1px 1px 0 black)
+                drop-shadow(-1px -1px 0 white)
+                drop-shadow(50px 30px 4px #000000);
+  filter:drop-shadow(1px 1px 0 black)
+         drop-shadow(-1px -1px 0 white)
+         drop-shadow(50px 30px 4px #000000);
+  padding: 12px 16px;
+  z-index: 100;
 }
 
 .navigation:hover .dropdown-content {
   display: block;
 }
 
-.navigation1 {
-  left: 5px
+div.navigation2 {
+
+    position: relative;
+    top: 3vh;
+    min-width: 75px;
+    margin-left: 75px;
+    padding: 105px;
+    background-color: #cae8ca;
+    border: 2px solid #4CAF50;
+
+    z-index:1;
+
+
 }
 
 .TWW_logo_menu {
+  /* position: -webkit-sticky; */
+  position: fixed;
+  top: 0;
   /* height: 60vmin; */
-  pointer-events: none;
-  -webkit-filter: drop-shadow(100px 10px 10px #000000 );
-  filter: drop-shadow(50px 30px 4px #000000);
+  pointer-events: initial;
+  -webkit-filter: drop-shadow(1px 1px 0 black)
+                drop-shadow(-1px -1px 0 white)
+                drop-shadow(50px 30px 4px #000000);
+  filter:drop-shadow(1px 1px 0 black)
+         drop-shadow(-1px -1px 0 white)
+         drop-shadow(50px 30px 4px #000000);
+  z-index: 100;
 }

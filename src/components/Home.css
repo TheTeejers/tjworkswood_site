@@ -1,0 +1,29 @@
+.working {
+  color: white;
+}
+
+.TWW_logo_main {
+  padding-bottom: -100px ;
+}
+
+.announcement {
+  /* height: 40px; */
+  position: fixed;
+  bottom:5%;
+  /* width:100%; */
+  /* background-color: #393838; */
+  /* opacity: 1; */
+}
+
+.TWW_logo_main {
+  height: 90vmin;
+  pointer-events: none;
+
+  padding-bottom: -100px;
+  -webkit-filter: drop-shadow(1px 1px 0 black)
+                drop-shadow(-1px -1px 0 white)
+                drop-shadow(50px 30px 4px #000000);
+  filter:drop-shadow(1px 1px 0 black)
+         drop-shadow(-1px -1px 0 white)
+         drop-shadow(50px 30px 4px #000000);
+}
