@@ -8,7 +8,8 @@ import {
 } from "react-router-dom";
 
 import Cutting_Board_Cleaning from './components/Cutting_Board_Cleaning.js';
-import Home from './Home.js';
+import Header from './components/Header.js';
+import Home from './components/Home.js';
 
 import './App.css';
 
@@ -16,13 +17,12 @@ import './App.css';
 
 function App() {
   return (
+
     <div className="App">
+      <Header />
+
       <Home />
-      <Cutting_Board_Cleaning />
 
-
-      <Link to="/invoices">Invoices</Link> |{" "}
-      <Link to="/Cutting_Board_Cleaning">Expenses</Link>
 
 
     </div>

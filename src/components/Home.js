@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import logo from './assests/images/TWW_logo.png';
+import logo from '../assests/images/TWW_logo.png';
 // import { BrowserRouter as Router, Route } from 'react-router-dom';
-import './App.css';
+import '../App.css';
 
 
 
