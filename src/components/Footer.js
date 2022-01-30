@@ -7,8 +7,8 @@ class Footer extends Component {
   render() {
     return (
       <div className='footerContainer'>
-        <p>Designed and Developed with &hearts; by <a className='mailLink' href="mailto:tj@tjworkswood.com">TJ Loughry</a></p>
-        <p>&#9400; 2022</p>
+        <p className="footerText">Designed and Developed with &hearts; by <a className='mailLink' href="mailto:tj@tjworkswood.com">TJ Loughry</a></p>
+        <p className="footerText">&#9400; 2022</p>
       </div>
     );
   }

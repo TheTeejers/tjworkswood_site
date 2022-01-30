@@ -13,20 +13,7 @@ function Home() {
         <p className="working">
           TJWorksWood.com is currently under maintenance....
         </p>
-
-
-
-
-
-        <a
-          className="App-link"
-          href="https://www.youtube.com/channel/UC1-dqpQvYh7XpVCsma_Fnog"
-          target="_blank"
-          rel="noopener noreferrer"
-        >My YouTube Channel</a>
       </div>
-
-
     </div>
   );
 }

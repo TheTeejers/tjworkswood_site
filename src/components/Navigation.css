@@ -6,28 +6,58 @@
   /* background-color: #cae8ca;
   border: 2px solid #4CAF50; */
   /* display: inline-block; */
-  z-index: 100
+  z-index: 100;
+  width: 50px;
+  height: 50px;
+  padding: 12px 50px;
   /* background-color: blue; */
-
+  position: fixed;
+  /* top: 40px; */
+  left: 0;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
 }
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #9FCF67;
+  /* animation-timing-function: ease; */
+  display: block;
+  font-family:slideOut;
+  /* animation: out 2s 1;
+  position: absolute; */
+
+  position: fixed;
+  top: 40px;
+  left: -500px;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  background-color: #554747;
+  background-image: url('../assests/backgrounds/PNG_Files/005-wood-grain.png');
   min-width: 160px;
+  /* -webkit-filter: drop-shadow(1px 1px 0 black)
+                drop-shadow(-1px -1px 0 white)
+                drop-shadow(50px 30px 4px #000000);
+  filter:drop-shadow(1px 1px 0 black)
+         drop-shadow(-1px -1px 0 white)
+         drop-shadow(50px 30px 4px #000000);
+  padding: 12px 16px; */
+  z-index: 100;
+}
+
+
+.navigation:hover .dropdown-content {
+
+
+  left: 0;
   -webkit-filter: drop-shadow(1px 1px 0 black)
                 drop-shadow(-1px -1px 0 white)
                 drop-shadow(50px 30px 4px #000000);
   filter:drop-shadow(1px 1px 0 black)
          drop-shadow(-1px -1px 0 white)
          drop-shadow(50px 30px 4px #000000);
-  padding: 12px 16px;
-  z-index: 100;
-}
-
-.navigation:hover .dropdown-content {
-  display: block;
 }
 
 div.navigation2 {
@@ -49,6 +79,11 @@ div.navigation2 {
   /* position: -webkit-sticky; */
   position: fixed;
   top: 0;
+  /* left: 0; */
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
   /* height: 60vmin; */
   pointer-events: initial;
   -webkit-filter: drop-shadow(1px 1px 0 black)
@@ -58,4 +93,14 @@ div.navigation2 {
          drop-shadow(-1px -1px 0 white)
          drop-shadow(50px 30px 4px #000000);
   z-index: 100;
+}
+
+.nav-item {
+  background-image: url('../assests/backgrounds/PNG_Files/004-polished-wood.png');
+  background-color: #554747;
+  border-radius: 10px;
+  border: 2px solid #73AD21;
+  list-style-type: none;
+  margin: 25px;
+  padding: 20px 10px;
 }

@@ -14,17 +14,36 @@ function Navigation() {
             </NavLink>
             <div class="dropdown-content">
               <ul className="navbar-nav ml-auto">
-                <li className="nav-item">
-                  <NavLink className="nav-link" to="/">
+                <NavLink className="nav-link" to="/">
+                  <li className="nav-item">
                     Home
-                  </NavLink>
-                </li>
-                <li className="nav-item">
-                  <NavLink className="nav-link" to="/Cutting_Board_Cleaning">
+                  </li>
+                </NavLink>
+                <NavLink className="nav-link" to="/Cutting_Board_Care">
+                  <li className="nav-item">
                     Cutting Board Care
-                  </NavLink>
-                </li>
-
+                  </li>
+                </NavLink>
+                <NavLink className="nav-link" to="/Projects">
+                  <li className="nav-item">
+                    Projects
+                  </li>
+                </NavLink>
+                <a className="nav-link" href="https://www.youtube.com/channel/UC1-dqpQvYh7XpVCsma_Fnog" target="blank">
+                  <li className="nav-item">
+                    Videos
+                  </li>
+                </a>
+                <NavLink className="nav-link" to="/About">
+                  <li className="nav-item">
+                    About
+                  </li>
+                </NavLink>
+                <NavLink className="nav-link" to="/Contact">
+                  <li className="nav-item">
+                    Contact
+                  </li>
+                </NavLink>
               </ul>
             </div>
           </div>

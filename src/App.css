@@ -5,10 +5,33 @@
 body {
   /* opacity: 0.5; */
   background-color: #282c34;
-  background-image: url("https://www.transparenttextures.com/patterns/tileable-wood-colored.png");
+  background-image: url('./assests/backgrounds/PNG_Files/tileable-wood-colored.png');
+  /* width: 100vw;
+  height: 100vh */
 }
 
+a {
+    text-decoration: none;
+}
 
+a:link {    /* unvisited link */
+    color: #000000;
+    /* text-decoration: none; */
+    /* border-bottom: 1px solid; */
+}
+a:visited {    /* visited link */
+    color: #000000;
+    /* text-decoration: none; */
+}
+a:hover {    /* mouse over link */
+    color: #00ff00;
+    border-bottom: 1px solid;
+    text-decoration: none;
+
+}
+a:active {    /* active link */
+    color: #000000;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .TWW_logo_main {
@@ -42,4 +65,9 @@ body {
   to {
     transform: rotate(360deg);
   }
+}
+
+@font-face {
+    font-family: 'slideOut'; /*a name to be used later*/
+    src: url('./assests/fonts/ShareTechMono-Regular.ttf'); /*URL to font*/
 }
