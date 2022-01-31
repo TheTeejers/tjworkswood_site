@@ -6,13 +6,14 @@ import logo from '../assests/images/sawblade_logo.png';
 function Navigation() {
   return (
     <div className="navigation1">
-
+      <NavLink className="navbar-brand" to="/">
+        <img src={logo} className="TWW_logo_menu" alt="logo" />
+      </NavLink>
         <nav className="navbar navbar-expand navbar-dark bg-dark">
           <div className="navigation">
-            <NavLink className="navbar-brand" to="/">
-              <img src={logo} className="TWW_logo_menu" alt="logo" />
-            </NavLink>
+
             <div class="dropdown-content">
+              <div id='menuTab'> Menu </div>
               <ul className="navbar-nav ml-auto">
                 <NavLink className="nav-link" to="/">
                   <li className="nav-item">

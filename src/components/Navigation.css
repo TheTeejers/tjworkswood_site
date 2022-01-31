@@ -6,7 +6,7 @@
   /* background-color: #cae8ca;
   border: 2px solid #4CAF50; */
   /* display: inline-block; */
-  z-index: 100;
+  /* z-index: 100; */
   width: 50px;
   height: 50px;
   padding: 12px 50px;
@@ -23,13 +23,13 @@
 .dropdown-content {
   /* animation-timing-function: ease; */
   display: block;
-  font-family:slideOut;
+  font-family: slideOut;
   /* animation: out 2s 1;
   position: absolute; */
 
   position: fixed;
-  top: 40px;
-  left: -500px;
+  top: 90px;
+  left: -275px;
   -webkit-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
@@ -37,6 +37,7 @@
   background-color: #554747;
   background-image: url('../assests/backgrounds/PNG_Files/005-wood-grain.png');
   min-width: 160px;
+  /* height: 100px; */
   /* -webkit-filter: drop-shadow(1px 1px 0 black)
                 drop-shadow(-1px -1px 0 white)
                 drop-shadow(50px 30px 4px #000000);
@@ -47,17 +48,20 @@
   z-index: 100;
 }
 
-
+.navigation  :hover {
+  left: 250px
+}
 .navigation:hover .dropdown-content {
 
+  height: auto;
 
   left: 0;
   -webkit-filter: drop-shadow(1px 1px 0 black)
                 drop-shadow(-1px -1px 0 white)
                 drop-shadow(50px 30px 4px #000000);
-  filter:drop-shadow(1px 1px 0 black)
+  /* filter:drop-shadow(1px 1px 0 black)
          drop-shadow(-1px -1px 0 white)
-         drop-shadow(50px 30px 4px #000000);
+         drop-shadow(50px 30px 4px #000000); */
 }
 
 div.navigation2 {
@@ -89,9 +93,9 @@ div.navigation2 {
   -webkit-filter: drop-shadow(1px 1px 0 black)
                 drop-shadow(-1px -1px 0 white)
                 drop-shadow(50px 30px 4px #000000);
-  filter:drop-shadow(1px 1px 0 black)
+  /* filter:drop-shadow(1px 1px 0 black)
          drop-shadow(-1px -1px 0 white)
-         drop-shadow(50px 30px 4px #000000);
+         drop-shadow(50px 30px 4px #000000); */
   z-index: 100;
 }
 
@@ -103,4 +107,27 @@ div.navigation2 {
   list-style-type: none;
   margin: 25px;
   padding: 20px 10px;
+}
+
+#menuTab {
+  font-family: 'slideOut';
+  /* background-color: #554747; */
+  background-image: url('../assests/backgrounds/PNG_Files/004-polished-wood.png');
+  margin-left: 100%;
+  transform: rotate(90deg);
+  /* border: 2px solid pink; */
+  height:20px;
+  width:50px;
+  /* margin: 25px; */
+  padding: 20px 0px 10px 0px;
+  border-radius: 10px 10px 00px 0px;
+  text-transform: uppercase;
+  text-align: center;
+  z-index: -10;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  border-top-color: #4CAF50;
+  border-right-color: #4CAF50;
+  border-left-color: #4CAF50;
 }
