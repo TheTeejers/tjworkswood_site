@@ -96,7 +96,7 @@ div.navigation2 {
   /* filter:drop-shadow(1px 1px 0 black)
          drop-shadow(-1px -1px 0 white)
          drop-shadow(50px 30px 4px #000000); */
-  z-index: 100;
+  z-index: 10;
 }
 
 .nav-item {

@@ -6,6 +6,7 @@
 .TWW_logo_main {
   padding-bottom: -100px ;
   margin-bottom: -100px ;
+  z-index: -5;
 }
 
 .announcement {
