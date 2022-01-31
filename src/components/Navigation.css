@@ -51,17 +51,16 @@
 .navigation  :hover {
   left: 250px
 }
+
 .navigation:hover .dropdown-content {
-
   height: auto;
-
   left: 0;
   -webkit-filter: drop-shadow(1px 1px 0 black)
-                drop-shadow(-1px -1px 0 white)
+                /* drop-shadow(-1px -1px 0 white) */
                 drop-shadow(50px 30px 4px #000000);
-  /* filter:drop-shadow(1px 1px 0 black)
-         drop-shadow(-1px -1px 0 white)
-         drop-shadow(50px 30px 4px #000000); */
+  filter:drop-shadow(1px 1px 0 black)
+         /* drop-shadow(-1px -1px 0 white) */
+         drop-shadow(50px 30px 4px #000000);
 }
 
 div.navigation2 {
@@ -73,10 +72,7 @@ div.navigation2 {
     padding: 105px;
     background-color: #cae8ca;
     border: 2px solid #4CAF50;
-
     z-index:1;
-
-
 }
 
 .TWW_logo_menu {
@@ -93,10 +89,10 @@ div.navigation2 {
   -webkit-filter: drop-shadow(1px 1px 0 black)
                 drop-shadow(-1px -1px 0 white)
                 drop-shadow(50px 30px 4px #000000);
-  /* filter:drop-shadow(1px 1px 0 black)
+  filter:drop-shadow(1px 1px 0 black)
          drop-shadow(-1px -1px 0 white)
-         drop-shadow(50px 30px 4px #000000); */
-  z-index: 10;
+         drop-shadow(50px 30px 4px #000000);
+  z-index: -10;
 }
 
 .nav-item {

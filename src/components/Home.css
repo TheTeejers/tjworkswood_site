@@ -1,5 +1,6 @@
 .working {
   color: white;
+  text-align: center;
 
 }
 
@@ -7,21 +8,18 @@
   padding-bottom: -100px ;
   margin-bottom: -100px ;
   z-index: -5;
-}
-
-.announcement {
-margin-bottom: 150px
-  }
-
-.TWW_logo_main {
   height: 90vmin;
   pointer-events: none;
 
-  padding-bottom: -100px;
   -webkit-filter: drop-shadow(1px 1px 0 black)
                 drop-shadow(-1px -1px 0 white)
                 drop-shadow(50px 30px 4px #000000);
   filter:drop-shadow(1px 1px 0 black)
          drop-shadow(-1px -1px 0 white)
          drop-shadow(50px 30px 4px #000000);
+
 }
+
+.announcement {
+margin-bottom: 150px
+  }
