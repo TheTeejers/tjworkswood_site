@@ -12,7 +12,7 @@ function Navigation() {
         <nav className="navbar navbar-expand navbar-dark bg-dark">
           <div className="navigation">
 
-            <div class="dropdown-content">
+            <div className="dropdown-content">
               <div id='menuTab'> Menu </div>
               <ul className="navbar-nav ml-auto">
                 <NavLink className="nav-link" to="/">
