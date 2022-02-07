@@ -10,6 +10,8 @@ import App from "./App";
 import Cutting_Board_Care from "./components/Cutting_Board_Care";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
+import Nav from "./components/Nav";
+import Nav1 from "./components/Nav1";
 
 
 const rootElement = document.getElementById("root");
@@ -21,6 +23,8 @@ render(
       <Route path="Projects" element={<App />} />
       <Route path="About" element={<App />} />
       <Route path="Contact" element={<Contact />} />
+      <Route path="Nav" element={<Nav />} />
+      <Route path="Nav1" element={<Nav1 />} />
 
 
     </Routes>
