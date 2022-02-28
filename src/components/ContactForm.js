@@ -3,6 +3,8 @@ import { ref, getFirestore, doc, setDoc, addDoc, getDoc, collection, onSnapshot,
 import React, { useState, useEffect } from 'react';
 import firebaseDB from "../firebase"
 import { async } from '@firebase/util';
+import Datetime from 'react-datetime';
+import moment from "moment";
 
 
 import './ContactForm.css';
@@ -28,6 +30,8 @@ const ContactForm = () => {
     phone: '',
     email: '',
     message: '',
+    submitTime: moment().format("DD-MM-YYYY hh:mm:ss")
+
   }
 
   var [values, setValues] = useState(initialFieldValues);
@@ -40,13 +44,15 @@ const ContactForm = () => {
     })
   }
 
-  const messagesCollection = collection(firestore, 'messages');
+  const messagesCollection = collection(firestore, moment().format("DD-MM-YYYY"));
   async function addANewDocument() {
     const newDoc = await addDoc(messagesCollection, {
         fullName: values.fullName,
         phone: values.phone,
         email: values.email,
         message: values.message,
+        submitTime: moment().format("DD-MM-YYYY hh:mm:ss")
+
     });
   }
 
@@ -64,9 +70,10 @@ const ContactForm = () => {
       phone: '',
       email: '',
       message: '',
+      submitTime: moment().format("DD-MM-YYYY hh:mm:ss")
     })
     // console.log('lookie here ' + document.getElementById('fullName').value);
-
+    return alert('Thanks for submitting your Contact Form!  I will get back to you soon!')
 
 
   }

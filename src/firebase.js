@@ -9,14 +9,14 @@ import { async } from '@firebase/util';
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-var firebaseConfig = {
-  apiKey: "AIzaSyAcRaiJaNBBLCGu00pVGiQvufmpLgQBQ5c",
-  authDomain: "tjworkswoodsite.firebaseapp.com",
-  projectId: "tjworkswoodsite",
-  storageBucket: "tjworkswoodsite.appspot.com",
-  messagingSenderId: "76045409243",
-  appId: "1:76045409243:web:eb45d7ba9d5752a31265fe",
-  measurementId: "G-8WZ8LXB56W"
+const firebaseConfig = {
+  apiKey: "AIzaSyBLUORxmZiSa6oPKCYNJq2kAmmCUAA3mX8",
+  authDomain: "tjworkswood-v0-1.firebaseapp.com",
+  projectId: "tjworkswood-v0-1",
+  storageBucket: "tjworkswood-v0-1.appspot.com",
+  messagingSenderId: "524610814868",
+  appId: "1:524610814868:web:eed366874a424c2fec8581",
+  measurementId: "G-D09WNZ5DG1"
 };
 
 // Initialize Firebase
@@ -45,15 +45,15 @@ function writeDailySpecial(){
 
 
 
-// const ordersCollection = collection(firestore, 'orders');
-// async function addANewDocument() {
-//   const newDoc = await addDoc(ordersCollection, {
-//     customer: 'TJ',
-//     drink: 'stuff',
-//     total_cost: (100 + Math.floor(Math.random() * 400))/100,
-//   });
-//   console.log(`doc was created at ${newDoc.path}`)
-// }
+const ordersCollection = collection(firestore, 'orders');
+async function addANewDocument() {
+  const newDoc = await addDoc(ordersCollection, {
+    customer: 'TJ',
+    drink: 'stuff',
+    total_cost: (100 + Math.floor(Math.random() * 400))/100,
+  });
+  console.log(`doc was created at ${newDoc.path}`)
+}
 
 
 async function readASingleDocument() {
